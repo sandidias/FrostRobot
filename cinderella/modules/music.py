@@ -80,7 +80,7 @@ __help__ = """ Youtube audio Downloader
 It will be up soon.
 
 """
-__mod_name__ = "MP3 DOWNLOADER" 
+__mod_name__ = "MUSIC" 
 
 music_handler = CommandHandler('music', music, pass_args=True)
 dispatcher.add_handler(music_handler)

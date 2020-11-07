@@ -12,7 +12,7 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from tg_bot import dispatcher
+from cinderella import dispatcher
 import requests
 import math
 import time

@@ -87,7 +87,7 @@ def chatbot(bot: Bot, update: Update):
             bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
                     
 
-__mod_name__ = "𝕄𝕀𝕊𝕊 ℝ𝕖𝕞 Chat"
+__mod_name__ = "Chatbot"
 
 __help__ = """
 

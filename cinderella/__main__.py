@@ -179,8 +179,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🔮Manu",callback_data="help_back"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/pikachusupportbot")]]
-    keyboard += [[InlineKeyboardButton(text="📗Support Group", url="https://t.me/pikachusupportbot"),InlineKeyboardButton(text="☑️ Add Pikachu to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="🔮Manu",callback_data="help_back"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLab_Updates")]]
+    keyboard += [[InlineKeyboardButton(text="📗Support Group", url="https://t.me/BotLab_Support"),InlineKeyboardButton(text="☑️ Add Pikachu to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -280,8 +280,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="🛡Contact Creator",url="https://t.me/Surv_ivor")]]))
+                                                [[InlineKeyboardButton(text="👑Help",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="Bot Lab | Red Support",url="https://t.me/BotLab_Support")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):

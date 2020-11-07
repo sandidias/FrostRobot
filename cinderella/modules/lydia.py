@@ -87,7 +87,7 @@ def lydia(bot: Bot, update: Update):
             bot.send_message(OWNER_ID, f"lydia error: {e} occurred in {chat_id}!")
                     
 
-__mod_name__ = "PIKACHU"
+__mod_name__ = "RED"
 
 __help__ = """
 Commands

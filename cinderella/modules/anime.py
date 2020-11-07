@@ -361,7 +361,7 @@ Get information about anime, manga or characters with the help of this module! A
  - /character <character>: returns information about the character.
  - /manga <manga>: returns information about the manga.
 """
-__mod_name__ = "Anime"
+__mod_name__ = "ANIME"
 
 
 AIRING_HANDLER = CommandHandler("airing", airing)

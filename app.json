@@ -124,7 +124,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1118936839"
+         "value": "1227565070"
       },
       "WALL_API":{
          "description": "Enter wall api",

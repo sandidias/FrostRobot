@@ -67,19 +67,19 @@
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information",
-         "value": "-xyz"
+         "value": "HW6LQCYX43HS"
       },
        "LASTFM_API_KEY": {
          "description": "Required for lastfm plugin",
          "value": "-xyz"
       },
        "START_IMG": {
-         "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/511ad504656e712b88235.jpg"    
+         "description": "Image shows /start",
+         "value": "https://telegra.ph/file/921f3abe1758cbf7dea0e.jpg    
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
-         "value": "-xyz"
+         "value": "5c5adc2bc1832de6943e3f4467e84c39"
       },
       "PORT": {
          "description": "Port to use for your webhooks.",

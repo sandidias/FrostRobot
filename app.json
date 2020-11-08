@@ -49,16 +49,16 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "1227565070"
+         "value": "1118936839"
       },
       "OWNER_NAME": {
-         "description": "Name",
-         "value": "Trainer Red"
+         "description": "Your Name",
+         "value": "✰Sᴀͥʀᴀͣᴛͫʜ™️✰"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
          "required": false,
-         "value": "1227565070"
+         "value": "1118936839"
       },
       "CASH_API_KEY": {
          "description": "Required for currency converter",
@@ -67,19 +67,19 @@
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information",
-         "value": "HW6LQCYX43HS"
+         "value": "-xyz"
       },
        "LASTFM_API_KEY": {
          "description": "Required for lastfm plugin",
          "value": "-xyz"
       },
        "START_IMG": {
-         "description": "Image shows /start",
-         "value": "https://telegra.ph/file/921f3abe1758cbf7dea0e.jpg    
+         "description": "Image shows when hit /start",
+         "value": "https://telegra.ph/file/511ad504656e712b88235.jpg"    
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
-         "value": "5c5adc2bc1832de6943e3f4467e84c39"
+         "value": "-xyz"
       },
       "PORT": {
          "description": "Port to use for your webhooks.",
@@ -98,12 +98,12 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1227565070"
+         "value": "1118936839"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1227565070"
+         "value": "1118936839"
       },
      
       "TOKEN": {
@@ -124,7 +124,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1227565070"
+         "value": "1118936839"
       },
       "WALL_API":{
          "description": "Enter wall api",
@@ -142,11 +142,11 @@
       "weeb",
       "group",
       "manager",
-      "TrainerRed"
+      "cinderella"
       
    ],
-   "name": "Trainerred",
-   "repository": "https://github.com/Superboyfan/PokemonBot",
-   "success_url": "https://telegram.dog/TrainerRedbot",
-   "logo": "https://telegra.ph/file/7459b1fb549008ed003b1.jpg"
+   "name": "Cinderella",
+   "repository": "https://github.com/Sur-vivor/CiderellaProBot",
+   "success_url": "https://telegram.dog/CinderellaProBot",
+   "logo": "https://telegra.ph/file/511ad504656e712b88235.jpg"
 }

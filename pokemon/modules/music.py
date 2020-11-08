@@ -61,7 +61,7 @@ def music(bot: Bot, update: Update, args):
 		if not json2_response['error']:
 			payload = json2_response['payload']
 
-			info = '*{0}* \nUploaded by CINDERELLA'.format(payload['fulltitle'])
+			info = '*{0}* \nUploaded by POKEMON'.format(payload['fulltitle'])
 
 			try:
 				

@@ -83,7 +83,7 @@ else:
   img = START_IMG    
     
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("cinderella.modules." + module_name)
+    imported_module = importlib.import_module("pokemon.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -601,7 +601,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Cinderella running...")
+        LOGGER.info("Pokemon running...")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()

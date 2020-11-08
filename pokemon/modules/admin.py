@@ -60,7 +60,7 @@ def load(bot: Bot, update: Update):
     load_messasge = message.reply_text(f"Attempting to load module : <b>{text}</b>", parse_mode=ParseMode.HTML)
     
     try:
-        imported_module = importlib.import_module("cinderella.modules." + text)
+        imported_module = importlib.import_module("pokemon.modules." + text)
     except:
         load_messasge.edit_text("Does that module even exist?")
         return
@@ -124,7 +124,7 @@ def unload(bot: Bot, update: Update):
     unload_messasge = message.reply_text(f"Attempting to unload module : <b>{text}</b>", parse_mode=ParseMode.HTML)
 
     try:
-        imported_module = importlib.import_module("cinderella.modules." + text)
+        imported_module = importlib.import_module("pokemon.modules." + text)
     except:
         unload_messasge.edit_text("Does that module even exist?")
         return

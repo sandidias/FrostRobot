@@ -17,8 +17,8 @@ if is_module_loaded(FILENAME):
 
     from telegram.ext.dispatcher import run_async
 
-    from cinderella.modules.helper_funcs.chat_status import user_admin, is_user_admin, connection_status
-    from cinderella.modules.sql import disable_sql as sql
+    from pokemon.modules.helper_funcs.chat_status import user_admin, is_user_admin, connection_status
+    from pokemon.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []

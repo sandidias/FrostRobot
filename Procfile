@@ -1,2 +1,2 @@
-worker: python3 -m pokemon
+worker: python3 -m pokemonred
 ps:scale worker=1

@@ -48,7 +48,7 @@ def speedtestxyz_callback(bot: Bot, update: Update):
             replymsg += f"\n\n*Download:* `{convert(result['download'])}Mb/s`\n*Upload:* `{convert(result['upload'])}Mb/s`\n*Ping:* `{result['ping']}`\n*ISP:* `{result['client']['isp']}`"
             update.effective_message.edit_text(replymsg, parse_mode=ParseMode.MARKDOWN)
     else:
-        query.answer("You are required to join Heroes Association to use this command.")
+        query.answer("You are required to join Bot Lab | Red Support to use this command.")
 
 def get_size(bytes, suffix="B"):
     factor = 1024

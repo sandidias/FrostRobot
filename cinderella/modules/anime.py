@@ -9,8 +9,6 @@ from cinderella import DEV_USERS, OWNER_ID, SUDO_USERS, dispatcher
 from cinderella.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
-from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
-
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
 kayo_btn = "Kayo 🏴‍☠️"

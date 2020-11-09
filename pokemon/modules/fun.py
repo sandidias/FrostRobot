@@ -1,9 +1,10 @@
 import html
 import random
 import time
+from typing import List
 
-from telegram.ext import CallbackContext, run_async
-from telegram.error import BadRequest
+from telegram import Bot, Update, ParseMode
+from telegram.ext import run_async
 
 import pokemon.modules.fun_strings as fun_strings
 from pokemon import dispatcher

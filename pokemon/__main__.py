@@ -15,7 +15,7 @@ from urllib.request import urlopen
 from telegram import Message, Chat, Update, Bot, User
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError
-from telegram.ext import CommandHandler,CallbackContext Filters, MessageHandler, CallbackQueryHandler
+from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 from telegram.utils.helpers import escape_markdown
 from pokemon import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CERT_PATH, PORT, URL, LOGGER, OWNER_NAME, ALLOW_EXCL
@@ -83,7 +83,7 @@ else:
   img = START_IMG    
     
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("pokemon.modules." + module_name)
+    imported_module = importlib.import_module("cinderella.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -179,7 +179,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🔮Source Code",url="https://github.com/Superboyfan/PokemonBot"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLabUpdates")]]
+    keyboard = [[InlineKeyboardButton(text="🔮Manu",callback_data="help_back"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLabUpdates")]]
     keyboard += [[InlineKeyboardButton(text="📗Support Group", url="https://t.me/BotLabSupport"),InlineKeyboardButton(text="☑️ Add Pikachu to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
@@ -601,7 +601,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Pokemon running...")
+        LOGGER.info("Cinderella running...")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()

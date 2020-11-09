@@ -1,8 +1,8 @@
 from time import sleep
 
-from pokemon import Bot, Update, InlineKeyboardMarkup, InlineKeyboardButton
-from pokemon.error import BadRequest, Unauthorized
-from pokemon.ext import CommandHandler, CallbackQueryHandler, run_async
+from telegram import Bot, Update, InlineKeyboardMarkup, InlineKeyboardButton
+from telegram.error import BadRequest, Unauthorized
+from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
 from pokemon import dispatcher, OWNER_ID, DEV_USERS
 from pokemon.modules.helper_funcs.chat_status import dev_plus

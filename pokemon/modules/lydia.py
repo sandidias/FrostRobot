@@ -28,9 +28,9 @@ def add_chat(bot: Bot, update: Update):
         ses_id = str(ses.id)
         expires = str(ses.expires)
         sql.set_ses(chat_id, ses_id, expires)
-        msg.reply_text("Pikachu successfully enabled for this chat!")
+        msg.reply_text("Frost Manager successfully enabled for this chat!")
     else:
-        msg.reply_text("Pikachu is already enabled for this chat!")
+        msg.reply_text("Frost Manager is already enabled for this chat!")
         
         
 @run_async
@@ -39,10 +39,10 @@ def remove_chat(bot: Bot, update: Update):
     chat_id = update.effective_chat.id
     is_chat = sql.is_chat(chat_id)
     if not is_chat:
-        msg.reply_text("Pikachu isn't enabled here in the first place!")
+        msg.reply_text("Frost Manager isn't enabled here in the first place!")
     else:
         sql.rem_chat(chat_id)
-        msg.reply_text("Pikachu disabled successfully!")
+        msg.reply_text("Frost Manager disabled successfully!")
         
         
 def check_message(bot: Bot, message):
@@ -87,7 +87,7 @@ def lydia(bot: Bot, update: Update):
             bot.send_message(OWNER_ID, f"lydia error: {e} occurred in {chat_id}!")
                     
 
-__mod_name__ = "RED"
+__mod_name__ = "LYDIA"
 
 __help__ = """
 Commands

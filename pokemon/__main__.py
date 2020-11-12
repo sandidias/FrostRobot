@@ -28,15 +28,18 @@ from pokemon.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras ;)
+Hi *{}*, my name is *{}*! 
+I am an Anime themed group management bot with some fun extras :b
 You can find the list of available commands with /help
+
+====================
+My owner [Frost](t.me/Frost_id)
 """
 
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of Pokemon
+I'm a manager group bot with some extras features
 Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
@@ -58,7 +61,7 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-⚡Made By Darkpokefan
+⚡Made By Frost.
 ⚡Enjoy Bot
 """
 
@@ -164,8 +167,8 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Heya,{} Here..\nHow can I help you? 🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🔮Manu",url="t.me/{}?start=help".format(bot.username))]]))
+        update.effective_message.reply_text("I'm alive!,{} Here..\nHow can I help you?".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
     #Try to remove old message
@@ -179,8 +182,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🔮Manu",callback_data="help_back"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLab_Updates")]]
-    keyboard += [[InlineKeyboardButton(text="📗Support Group", url="https://t.me/BotLab_Support"),InlineKeyboardButton(text="☑️ Add Pikachu to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="Menu",callback_data="help_back"),InlineKeyboardButton(text="Updates Channel",url="https://t.me/FrostClouds")]]
+    keyboard += [[InlineKeyboardButton(text="Support Group", url="https://t.me/FrostSupport"),InlineKeyboardButton(text="✅ Add Frost Manager to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -281,7 +284,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="👑Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Ash Ketchum",url="https://t.me/AshKetchumRobot")]]))
+                                                [InlineKeyboardButton(text="Frost Manager",url="https://t.me/FrostManager_bot")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
@@ -343,7 +346,7 @@ def settings_button(bot: Bot, update: Update):
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton(text="👒Back👒",
+                                         [[InlineKeyboardButton(text="🔰Back🔰",
                                                                 callback_data="stngs_back({})".format(chat_id))]]))
 
         elif prev_match:

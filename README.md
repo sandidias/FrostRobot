@@ -7,7 +7,7 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database and 
 
 Can be found on telegram as [Frost Manager](https://t.me/FrostManager_bot).
 
-The Support group can be reached out to at [Frost Support Group](https://t.me/FrostSupport), where you can ask for help about [Frost Support](https://t.me/FrostSupport), discover for eport bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Frost Support Group](https://t.me/FrostSupport), where you can ask for help about [Frost Support](https://t.me/FrostSupport), discover for report bugs, and stay in the loop whenever a new update is available. 
 
 Updates Channel as at [Frost Clouds](https://t.me/FrostClouds) 
 

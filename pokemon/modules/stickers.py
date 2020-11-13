@@ -231,13 +231,13 @@ def makepack_internal(msg, user, png_sticker, emoji, bot, packname, packnum):
 __help__ = """
 - /stickerid: reply to a sticker to get its ID.
 - /getsticker: reply to a sticker to get the raw PNG image.
-- /steal: reply to a sticker or image to add it to your pack.
+- /kang: reply to a sticker or image to add it to your pack.
 """
 
 __mod_name__ = "STICKERS"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
-STEAL_HANDLER = DisableAbleCommandHandler("steal", steal, pass_args=True, admin_ok=False)
+STEAL_HANDLER = DisableAbleCommandHandler("kang", steal, pass_args=True, admin_ok=False)
 
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)

@@ -27,7 +27,7 @@ from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 from telegram.error import BadRequest
 
-from pokemon import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, sw
+from pokemon import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS
 from pokemon.__main__ import GDPR
 from pokemon.__main__ import STATS, USER_INFO
 from pokemon.modules.disable import DisableAbleCommandHandler

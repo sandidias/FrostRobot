@@ -11,6 +11,11 @@ from telegram.ext import run_async
 @run_async
 def animequotes(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(animequotesstring.ANIMEQUOTES))
+   
+
+@run_async
+def animequotes(bot: Bot, update: Update):
+    update.effective_message.reply_jpg(random.choice(animequotesstring.ANIMEQUOTESJPG))
 
 __help__ = """
  • `/animequotes`*:* for random animequotes

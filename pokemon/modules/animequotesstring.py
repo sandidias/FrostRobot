@@ -50,6 +50,11 @@ ANIMEQUOTES=(
 "If you want to get to know someone, find out what makes them angry.- Gon Freecss",
 "It takes a mere second for treasure to turn to trash.- Hisoka Morow",
 "Shinchan Is Mad~Pranav ajay",
-
- 
+"Human potential for evolution is limitless. - Isaac Netero",
+"You should enjoy the little detours to the fullest. Because that's where you'll find things more important than what you want.- Ging Freecss",
+"You Want To Keep Everyone From Dying? That’s Naïve. It’s War. People Die-Monkey D. Luffy",
+"Justice Will Prevail, You Say? But Of Course, It Will! Whoever Wins This War Becomes Justice!-Donquixote Doflamingo",
+"People’s Dreams... Have No Ends” -Marshall 'Blackbeard' D. Teach
+"Only I Can Call My Dream Stupid!-Roronoa Zoro",
+"When Do You Think People Die? When They Are Shot In The Heart With A Pistol? No. When They Are Ravaged By An Uncurable Disease? No. When They Drink A Soup Made From Poisonous Mushrooms? No. It’s When... They Are Forgotten!-Dr.Hiriluk",
 )

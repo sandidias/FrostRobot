@@ -1,4 +1,6 @@
+#Made By @Madepranav On Telegram & Github Id Superboyfam
 import html
+import animequotes
 import random
 import pokemon.modules.animequotesstring as animequotesstring
 from pokemon import dispatcher

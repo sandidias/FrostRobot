@@ -1,5 +1,5 @@
 ANIMEQUOTES=(
-"https://telegra.ph/file/4e46603ceca561144139d.jpg", 
+"(IMG)[https://telegra.ph/file/4e46603ceca561144139d.jpg]", 
 "Typical of Goku to say something that crazy…",
 "Excuse me but are you by any chance the oddball in your family?– Ash Ketchum",
 "The world isn't perfect. But it's there for us, doing the best it can....that's what makes it so damn beautiful.~ Roy Mustang (Full Metal Alchemist)",

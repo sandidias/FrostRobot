@@ -14,7 +14,7 @@ def animequotes(bot: Bot, update: Update):
    
 
 __help__ = """
- • `/animequotes`*:* for random animequotes
+ - /animequotes : for random Anime qoutes
 """
 
 ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
@@ -22,5 +22,5 @@ ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
 
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
-__mod_name__ = "animequotes"
+__mod_name__ = "AnimeQuotes"
 

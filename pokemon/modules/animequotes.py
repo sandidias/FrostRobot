@@ -1,3 +1,4 @@
+#Made By @Madepranav On Telegram & Github Id Superboyfan
 import html
 import random
 import pokemon.modules.animequotesstring as animequotesstring
@@ -10,6 +11,7 @@ from telegram.ext import run_async
 @run_async
 def animequotes(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(animequotesstring.ANIMEQUOTES))
+   
 
 __help__ = """
  • `/animequotes`*:* for random animequotes

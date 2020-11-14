@@ -1,5 +1,4 @@
 ANIMEQUOTES=(
-"(IMG)[https://telegra.ph/file/4e46603ceca561144139d.jpg]", 
 "Typical of Goku to say something that crazy…",
 "Excuse me but are you by any chance the oddball in your family?– Ash Ketchum",
 "The world isn't perfect. But it's there for us, doing the best it can....that's what makes it so damn beautiful.~ Roy Mustang (Full Metal Alchemist)",
@@ -40,3 +39,7 @@ ANIMEQUOTES=(
 "We do have a lot in common. The same earth, the same air, the same sky. Maybe if we started looking at what’s the same, instead of looking at what’s different, well, who knows?– Meowth",  
 
 )
+
+ANIMEQUOTESJPG=(
+"AgADBQADY6oxG8eIeVVSpslpE2dZRP8zx2x0AAMBAAMCAAN5AAM54gMAARYE",
+

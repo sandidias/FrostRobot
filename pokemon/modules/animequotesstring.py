@@ -39,8 +39,3 @@ ANIMEQUOTES=(
 "We do have a lot in common. The same earth, the same air, the same sky. Maybe if we started looking at what’s the same, instead of looking at what’s different, well, who knows?– Meowth",  
 
 )
-
-ANIMEQUOTESJPG=(
-"AgADBQADY6oxG8eIeVVSpslpE2dZRP8zx2x0AAMBAAMCAAN5AAM54gMAARYE",
-  
-)

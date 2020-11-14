@@ -12,6 +12,7 @@ urbandict
 pyowm
 gsearch
 wikipedia
+animequotes
 covid
 kbbi
 feedparser

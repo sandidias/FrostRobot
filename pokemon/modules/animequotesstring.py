@@ -37,5 +37,18 @@ ANIMEQUOTES=(
 "Make your wonderful dream a reality, it will become your truth. If anyone can, it’s you.– N, Pokemon Black/White",
 "It’s more important to master the cards you’re holding than to complain about the ones your opponent was dealt.– Grimsley",
 "We do have a lot in common. The same earth, the same air, the same sky. Maybe if we started looking at what’s the same, instead of looking at what’s different, well, who knows?– Meowth",  
+"That day four years ago… When I wasn’t needed by anyone. When nobody cared about me. When I had given up on living and was about to jump off the roof of a building… FB saved me with a single message. I didn’t care if it was a joke or not. I was just happy that somebody knew… that I was alive… that it was OK for me to live.~Moeka Kiryuu",
+"Look, even if we were enemies in the world you were before, right now I’m your only ally. Even if the whole world turned against you, I would continue to be your only ally.– Moeka Kiryuu",
+"When I realized, I was already on the roof of a building… I had come to hate everything. I was sick of sitting in my room holding my knees too. If nobody was going to notice or care if I died then… what’s the point in living?~Meoka Kiryuu",
+"It is those who possess wisdom who are the greatest fools. History has shown us this. You could say that this is the final warning from God to those who resist.– Rintaro Okabe",
+"The universe has a beginning, but no end. — Infinity. Stars, too, have their own beginnings, but their own power results in their destruction. — Finite.– Rintaro Okabe"
+"Living should mean no do-overs. This is for the best.~Rintaro Okabe",
+"What kind of mad scientist worries about not getting enough vegetables?– Rintaro Okabe", 
+"There are two types of lies: Lies that hurt, and lies that don’t hurt.– Itaru Hashida",
+"There are two things that collectors always want. The first is an item of extreme rarity. The second is colleagues to whom they can brag about their collection.- Kurapika",
+"People only find me interesting because they can't tell whether I'm serious or not.- Killua Zoldyck",  
+"If you want to get to know someone, find out what makes them angry.- Gon Freecss",
+"It takes a mere second for treasure to turn to trash.- Hisoka Morow",
 
+ 
 )

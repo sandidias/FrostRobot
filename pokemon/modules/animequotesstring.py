@@ -49,6 +49,7 @@ ANIMEQUOTES=(
 "People only find me interesting because they can't tell whether I'm serious or not.- Killua Zoldyck",  
 "If you want to get to know someone, find out what makes them angry.- Gon Freecss",
 "It takes a mere second for treasure to turn to trash.- Hisoka Morow",
+"Shinchan Is Mad~Pranav ajay
 
  
 )

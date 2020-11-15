@@ -10,7 +10,7 @@ from telegram.ext import run_async
 
 
 @run_async
-def animequotes(update: Update, context: CallbackContext):
+def animequotes(bot: Bot, update: Update):
     bot = context.bot
     args = context.args
     message = update.effective_message

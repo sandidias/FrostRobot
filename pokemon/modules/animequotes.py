@@ -8,55 +8,19 @@ from pokemon.modules.disable import DisableAbleCommandHandler
 from telegram.ext import run_async
 
 
-
 @run_async
 def animequotes(bot: Bot, update: Update):
-    bot = context.bot
-    args = context.args
-    message = update.effective_message
-
-    reply_to = message.reply_to_message if message.reply_to_message else message
-
-    curr_user = html.escape(message.from_user.first_name)
-    user_id = extract_user(message, args)
-
-    if user_id:
-        patted_user = bot.get_chat(user_id)
-        user1 = curr_user
-        user2 = html.escape(patted_user.first_name)
-
-    else:
-        user1 = bot.first_name
-        user2 = curr_user
-
-    animequotes_type = random.choice(("Text", "Gif", "Sticker"))
-    if animequotes == "Gif":
-        try:
-            temp = random.choice(animequotesstring.ANIMEQUTOES_GIFS)
-            reply_to.reply_animation(temp)
-        except BadRequest:
-            animequotes_type = "Text"
-
-    if animequotes_type == "Sticker":
-        try:
-            temp = random.choice(animequotesstring.ANIMEQUTOES_STICKERS)
-            reply_to.reply_sticker(temp)
-        except BadRequest:
-            animequotes_type = "Text"
-
-    if animequotes_type == "Text":
-        temp = random.choice(animequotesstring.ANIMEQUTOES_TEMPLATES)
-        reply = temp.format(user1=user1, user2=user2)
-        reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
-
+    update.effective_message.reply_text(random.choice(animequotesstring.ANIMEQUOTES))
+   
 
 __help__ = """
- • `/animequotes`*:* for random animequotes
+ - /animequotes : for random Anime qoutes
 """
 
-ANIMEQUTOES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
+ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
 
 
-dispatcher.add_handler(ANIMEQUTOES_HANDLER)
+dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
-__mod_name__ = "ANIMEQUTOES"
+__mod_name__ = "AnimeQuotes"
+

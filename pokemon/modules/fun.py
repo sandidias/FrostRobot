@@ -180,7 +180,7 @@ def block(bot: Bot, update: Update, args):
         msg.reply_text("Enter some text to weebify or reply to someone's message!")
         return
         
-    for normiecharacter in string:
+    for blocknormiecharacter in string:
         if blocknormiecharacter in blocknormiefont:
             blockcharacter = blockfont[blocknormiefont.index(blocknormiecharacter)]
             string = string.replace(blocknormiecharacter, blockcharacter)

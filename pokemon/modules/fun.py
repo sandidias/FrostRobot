@@ -14,7 +14,8 @@ from pokemon.modules.helper_funcs.extraction import extract_user
 
 normiefont = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 weebyfont = ['卂','乃','匚','刀','乇','下','厶','卄','工','丁','长','乚','从','𠘨','口','尸','㔿','尺','丂','丅','凵','リ','山','乂','丫','乙']
-
+blocknormiefont= ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+blockfont=['🇦‌','🇧‌','🇨‌','🇩‌','🇪‌','🇫‌','🇬‌','🇭‌','🇮‌','🇯‌','🇰‌','🇱‌','🇲‌','🇳‌','🇴‌','🇵‌','🇶‌','🇷‌','🇸‌','🇹‌','🇺‌','🇻‌','🇼‌','🇽‌','🇾‌','🇿‌']
 @run_async
 def runs(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
@@ -169,25 +170,25 @@ def shout(bot: Bot, update: Update, args: List[str]):
       
 
 @run_async
-def pat(bot: Bot, update: Update):
-    chat_id = update.effective_chat.id
-    msg = str(update.message.text)
-    try:
-        msg = msg.split(" ", 1)[1]
-    except IndexError:
-        msg = ""
-    msg_id = update.effective_message.reply_to_message.message_id if update.effective_message.reply_to_message else update.effective_message.message_id
-    pats = []
-    pats = json.loads(urllib.request.urlopen(urllib.request.Request(
-    'http://headp.at/js/pats.json',
-    headers={'User-Agent': 'Mozilla/5.0 (X11; U; Linux i686) '
-         'Gecko/20071127 Firefox/2.0.0.11'}
-    )).read().decode('utf-8'))
-    if "@" in msg and len(msg) > 5:
-        bot.send_photo(chat_id, f'https://headp.at/pats/{urllib.parse.quote(random.choice(pats))}', caption=msg)
+def block(bot: Bot, update: Update, args):
+    msg = update.effective_message
+    if args:
+        string = " ".join(args).lower()
+    elif msg.reply_to_message:
+        string = msg.reply_to_message.text.lower()
     else:
-        bot.send_photo(chat_id, f'https://headp.at/pats/{urllib.parse.quote(random.choice(pats))}', reply_to_message_id=msg_id)
+        msg.reply_text("Enter some text to weebify or reply to someone's message!")
+        return
+        
+    for normiecharacter in string:
+        if blocknormiecharacter in blocknormiefont:
+            blockcharacter = blockfont[blocknormiefont.index(blocknormiecharacter)]
+            string = string.replace(blocknormiecharacter, blockcharacter)
 
+    if msg.reply_to_message:
+        msg.reply_to_message.reply_text(string)
+    else:
+        msg.reply_text(string)
 
 __help__ = """
  - /runs: reply a random string from an array of replies.
@@ -216,7 +217,7 @@ TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 JUDGE_HANDLER = DisableAbleCommandHandler("judge", judge)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, pass_args=True)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout, pass_args=True)
-PAT_HANDLER = DisableAbleCommandHandler("pat", pat, admin_ok=True)
+BLOCK_HANDLER = DisableAbleCommandHandler("block", block, pass_args=True)
 
 dispatcher.add_handler(RUNS_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
@@ -230,7 +231,7 @@ dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(JUDGE_HANDLER)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
-dispatcher.add_handler(PAT_HANDLER)
+dispatcher.add_handler(BLOCK_HANDLER)
 
 __mod_name__ = "FUN"
 __command_list__ = ["runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table", "judge", "weebify", "shout","pat"]

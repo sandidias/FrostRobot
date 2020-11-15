@@ -177,7 +177,7 @@ def block(bot: Bot, update: Update, args):
     elif msg.reply_to_message:
         string = msg.reply_to_message.text.lower()
     else:
-        msg.reply_text("Enter some text to weebify or reply to someone's message!")
+        msg.reply_text("Enter some text to blockfont or reply to someone's message!")
         return
         
     for blocknormiecharacter in string:
@@ -202,6 +202,7 @@ __help__ = """
  - /rlg : Join ears,nose,mouth and create an emo ;-;
  - /judge: as a reply to someone, checks if they're lying or not!
  - /weebify: as a reply to a message, "weebifies" the message.
+-/block: as a reply to a message, "blockfont" the messange.
  - /shout <word>: shout the specified word in the chat.
 """
 

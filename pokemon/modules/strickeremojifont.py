@@ -53,11 +53,5 @@ def pan(bot: Bot, update: Update):
         buffer.seek(0)
         bot.send_sticker(chat_id=message.chat_id, sticker=buffer)
 
-
-__help__ = """
- - /pan : text get funny emojify
-"""
-__mod_name__ = "Pan"
-
 PAN_HANDLER = DisableAbleCommandHandler("pan", pan, admin_ok=True)
 dispatcher.add_handler(PAN_HANDLER)

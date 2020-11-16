@@ -1,8 +1,8 @@
 import base64
 from io import BytesIO
 from PIL import Image
-from pokemon import Message, Update, Bot, User
-from pokemon.ext import Filters, MessageHandler, run_async
+from telegram import Message, Update, Bot, User
+from telegram.ext import Filters, MessageHandler, run_async
 from pokemon.modules.helper_funcs.extraction import extract_user_and_text
 from pokemon.modules.disable import DisableAbleCommandHandler
 from pokemon import dispatcher

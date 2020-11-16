@@ -204,6 +204,7 @@ __help__ = """
  - /weebify: as a reply to a message, "weebifies" the message.
  - /block: as a reply to a message, "blockfont" the messange.
  - /shout <word>: shout the specified word in the chat.
+ - /pan <text/reply a message>: text get funny emojify.
 """
 
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)

@@ -57,7 +57,7 @@ def pan(bot: Bot, update: Update):
 __help__ = """
    /Pan :- text get funny emojify
 """
-__mod_name__ = "pan"
+__mod_name__ = "PAN"
 
 PAN_HANDLER = DisableAbleCommandHandler("pan", pan, admin_ok=True)
 dispatcher.add_handler(PAN_HANDLER)

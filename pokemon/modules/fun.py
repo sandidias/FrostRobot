@@ -202,7 +202,7 @@ __help__ = """
  - /rlg : Join ears,nose,mouth and create an emo ;-;
  - /judge: as a reply to someone, checks if they're lying or not!
  - /weebify: as a reply to a message, "weebifies" the message.
--/block: as a reply to a message, "blockfont" the messange.
+ - /block: as a reply to a message, "blockfont" the messange.
  - /shout <word>: shout the specified word in the chat.
 """
 

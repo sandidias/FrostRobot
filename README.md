@@ -56,13 +56,13 @@ An example `config.py` file could be:
 from Trainerred.sample_config import Config
 
 class Development(Config):
-    OWNER_ID = 254318997  # your telegram ID
-    OWNER_USERNAME = "SonOfLars"  # your telegram username
+    OWNER_ID = 1227565070  # your telegram ID
+    OWNER_USERNAME = "Madepranav"  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
     USE_JOIN_LOGGER = True
-    SUDO_USERS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    SUDO_USERS = [1227565070, 792109647]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
@@ -199,13 +199,8 @@ For starters click on this button
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Superboyfan/PokemonBot.git) 
 
-
-## Credits
-The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
-This repo was just revamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
-
-Also, missing proper credit for blacklistusers taken from TheRealPhoenixBot (will add it later, this note says unless it is done)
-
-Any other authorship/credits can be seen through the commits.
-
-
+##Creadit 
+Big Thank you [PaulSonOfLars](https://github.com/PaulSonOfLars)
+Big Thank you [TheRealPhoenixBot](https://github.com/rsktg)
+Big Thank you [Sawade](https://github.com/TsunayoshiSawada)
+Big Thank you [Sᴀͥʀᴀͣᴛͫʜ™️](https://github.com/Sur-vivor).

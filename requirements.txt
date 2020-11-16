@@ -39,3 +39,4 @@ pytz
 parsel
 hurry.filesize
 spamwatch
+coffeehouse

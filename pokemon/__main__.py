@@ -182,14 +182,13 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="Menu/Help",callback_data="help_back"),InlineKeyboardButton(text="Updates Channel",url="https://t.me/FrostClouds")]]
-    keyboard += [[InlineKeyboardButton(text="Support Group", url="https://t.me/FrostSupport"),InlineKeyboardButton(text="✅ Add Frost Manager to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="🔮Manu",callback_data="help_back"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLab_Updates")]]
+    keyboard += [[InlineKeyboardButton(text="📗Support Group", url="https://t.me/BotLab_Support"),InlineKeyboardButton(text="☑️ Add Pikachu to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 
-
-def m_connect_button(bot, update):
+m_connect_button(bot, update):
     bot.delete_message(update.effective_chat.id, update.effective_message.message_id)
     connect_button(bot, update)
 

@@ -179,7 +179,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🔮Manu",callback_data="help_back"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLab_Updates")]]
+    keyboard = [[InlineKeyboardButton(text="💟Source Code",url="https://github.com/Superboyfan/PokemonBot"),InlineKeyboardButton(text="📘News Channel",url="https://t.me/BotLab_Updates")]]
     keyboard += [[InlineKeyboardButton(text="📗Support Group", url="https://t.me/BotLab_Support"),InlineKeyboardButton(text="☑️ Add Pikachu to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 

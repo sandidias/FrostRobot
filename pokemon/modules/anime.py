@@ -560,7 +560,6 @@ def site_search(bot: Bot, update: Update, site: str):
         message.reply_text(
             result, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
-
 @run_async
 def kaizoku(bot: Bot, update: Update):
     site_search(bot, update, "kaizoku")

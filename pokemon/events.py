@@ -12,11 +12,8 @@ def register(**args):
 
     args['pattern'] = pattern.replace('^/', r_pattern, 1)
 
-    def decorator(func):
-        oko.add_event_handler(func, events.NewMessage(**args))
-        return func
 
-    return decorator
+  
 
 
 def chataction(**args):

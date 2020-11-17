@@ -13,6 +13,7 @@ from pokemon.modules.disable import DisableAbleCommandHandler
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
+kisa_btn= "Kisa"
 kayo_btn = "Kayo 🏴‍☠️"
 prequel_btn = "⬅️ Prequel"
 sequel_btn = "Sequel ➡️"
@@ -513,7 +514,23 @@ def site_search(bot: Bot, update: Update, site: str):
             more_results = False
             result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>"
 
-    elif site == "kayo":
+    if site == "kisa":
+        search_url = f"https://animekisa.tv//?s={search_query}"
+        html_text = requests.get(search_url).text
+        soup = bs4.BeautifulSoup(html_text, "html.parser")
+        search_result = soup.find_all("h2", {'class': "post-title"})
+
+        if search_result:
+            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKisa</code>: \n"
+            for entry in search_result:
+                post_link = entry.a['href']
+                post_name = html.escape(entry.text)
+                result += f"• <a href='{post_link}'>{post_name}</a>\n"
+        else:
+            more_results = False
+            result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKisa</code>"
+
+     elif site == "kayo":
         search_url = f"https://animekayo.com/?s={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
@@ -548,6 +565,9 @@ def site_search(bot: Bot, update: Update, site: str):
 def kaizoku(bot: Bot, update: Update):
     site_search(bot, update, "kaizoku")
 
+@run_async
+def kisa(bot:Bot, updates:Update):
+   site_search(bot, update, "kisa"
 
 @run_async
 def kayo(bot: Bot, update: Update):
@@ -564,6 +584,7 @@ Get information about anime, manga or characters from [AniList](anilist.co).
  -/user <user>`*:* returns information about a MyAnimeList user.
  -/upcoming`*:* returns a list of new anime in the upcoming seasons.
  -/kaizoku <anime>`*:* search an anime on animekaizoku.com
+-/kisa <anime>`*:* search an anime on animekisa.tv
  -/kayo <anime>`*:* search an anime on animekayo.com
  -/airing <anime>`*:* returns anime airing info.
 
@@ -576,6 +597,7 @@ MANGA_HANDLER = DisableAbleCommandHandler("manga", manga)
 USER_HANDLER = DisableAbleCommandHandler("user", user)
 UPCOMING_HANDLER = DisableAbleCommandHandler("upcoming", upcoming)
 KAIZOKU_SEARCH_HANDLER = DisableAbleCommandHandler("kaizoku", kaizoku)
+KISA_SEARCH_HANDLER = DisableAbleCommandHandler("kisa", kisa)
 KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo)
 BUTTON_HANDLER = CallbackQueryHandler(button, pattern='anime_.*')
 
@@ -586,16 +608,17 @@ dispatcher.add_handler(MANGA_HANDLER)
 dispatcher.add_handler(AIRING_HANDLER)
 dispatcher.add_handler(USER_HANDLER)
 dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
+dispatcher.add_handler(KISA_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
 __mod_name__ = "Anime"
 __command_list__ = [
-    "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
+    "anime", "manga", "character", "user", "upcoming", "kaizoku", "kisa","airing",
     "kayo"
 ]
 __handlers__ = [
     ANIME_HANDLER, CHARACTER_HANDLER, MANGA_HANDLER, USER_HANDLER,
-    UPCOMING_HANDLER, KAIZOKU_SEARCH_HANDLER, KAYO_SEARCH_HANDLER,
+    UPCOMING_HANDLER, KAIZOKU_SEARCH_HANDLER,KISA_SEARCH_HANDLES, KAYO_SEARCH_HANDLER,
     BUTTON_HANDLER, AIRING_HANDLER
 ]

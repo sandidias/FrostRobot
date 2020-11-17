@@ -1,5 +1,4 @@
 from telethon import events
-from pokemon import oko
 
 
 def register(**args):

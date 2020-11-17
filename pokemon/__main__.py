@@ -28,15 +28,17 @@ from pokemon.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras ;)
+Hi *{}*, my name is *{}*! 
+I am an Anime themed group management bot with some fun extras :b
 You can find the list of available commands with /help
+====================
+My owner [Frost](t.me/Frost_id)
 """
 
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of Pokemon
+I'm a manager group bot with some extras features
 Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
@@ -58,7 +60,7 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-⚡Made By Darkpokefan
+⚡Made By Frost.
 ⚡Enjoy Bot
 """
 
@@ -164,8 +166,8 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Heya,{} Here..\nHow can I help you? 🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🔮Manu",url="t.me/{}?start=help".format(bot.username))]]))
+        update.effective_message.reply_text("I'm alive!,{} Here..\nHow can I help you?".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
     #Try to remove old message
@@ -280,8 +282,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="👑Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Ash Ketchum",url="https://t.me/AshKetchumRobot")]]))
+                                                [[InlineKeyboardButton(text="❓Help",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="Frost Manager",url="https://t.me/FrostManager_bot")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
@@ -343,7 +345,7 @@ def settings_button(bot: Bot, update: Update):
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton(text="👒Back👒",
+                                         [[InlineKeyboardButton(text="🔰Back🔰",
                                                                 callback_data="stngs_back({})".format(chat_id))]]))
 
         elif prev_match:

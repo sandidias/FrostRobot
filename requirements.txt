@@ -41,3 +41,4 @@ pytz
 parsel
 hurry.filesize
 spamwatch
+fontTools

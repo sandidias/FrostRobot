@@ -143,6 +143,7 @@ DEV_USERS.add(1227565070)
 SUDO_USERS.add(OWNER_ID)
 SUDO_USERS.add(1227565070)
 
+oko = TelegramClient("red", API_ID, API_HASH)
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
 

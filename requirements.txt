@@ -12,6 +12,8 @@ urbandict
 pyowm
 gsearch
 wikipedia
+telethon==1.16.4
+fontTools
 covid
 kbbi
 feedparser

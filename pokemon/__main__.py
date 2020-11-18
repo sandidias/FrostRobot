@@ -182,7 +182,7 @@ def send_start(bot, update):
     text = PM_START_TEXT
 
     keyboard = [[InlineKeyboardButton(text="Menu/Help",callback_data="help_back"),InlineKeyboardButton(text="Updates Channel",url="https://t.me/FrostClouds")]]
-    keyboard += [[InlineKeyboardButton(text="Support Group", url="https://t.me/FrostSupport"),InlineKeyboardButton(text="✅ Add Frost Manager to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard += [[InlineKeyboardButton(text="Support Group", url="https://t.me/FrostSupport"),InlineKeyboardButton(text="✅ Add Frost to your group",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -283,7 +283,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="❓Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Frost Manager",url="https://t.me/FrostManager_bot")]]))
+                                                [InlineKeyboardButton(text="Frost",url="https://t.me/FrostRobot")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):

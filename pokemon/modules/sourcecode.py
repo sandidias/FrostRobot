@@ -1,5 +1,5 @@
 __help__ = """
- Frost Manager Source Code - https://github.com/frostid/FrostManagerBot
+ Frost Robot Source Code - https://github.com/frostid/FrostRobot
  """
 
 __mod_name__ = "SOURCE CODE"

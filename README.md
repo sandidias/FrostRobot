@@ -5,7 +5,7 @@
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed On the Anime Series and others. 
 
-Can be found on telegram as [Frost Manager](https://t.me/FrostManager_bot).
+Can be found on telegram as [Frost](https://t.me/FrostRobot).
 
 The Support group can be reached out to at [Frost Support Group](https://t.me/FrostSupport), where you can ask for help about [Frost Support](https://t.me/FrostSupport), discover for report bugs, and stay in the loop whenever a new update is available. 
 
@@ -29,7 +29,7 @@ REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/frostid/FrostManagerBot.git)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/frostid/FrostRobot.git)
 
 </details>  
 <details>

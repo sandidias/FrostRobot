@@ -5,9 +5,9 @@
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed On the Anime Series and others. 
 
-Can be found on telegram as [Frost](https://t.me/FrostRobot).
+Can be found on telegram as [Frost Bot](https://t.me/FrostRobot).
 
-The Support group can be reached out to at [Frost Support Group](https://t.me/FrostSupport), where you can ask for help about [Frost Support](https://t.me/FrostSupport), discover for report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Frost Support Group](https://t.me/FrostSupport), where you can ask for help about [Frost Bot](https://t.me/FrostRobot), discover for report bugs, and stay in the loop whenever a new update is available. 
 
 Updates Channel as at [Frost Clouds](https://t.me/FrostClouds) 
 
